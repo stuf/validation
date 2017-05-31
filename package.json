@@ -1,0 +1,36 @@
+{
+  "name": "validation",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuf/validation.git"
+  },
+  "homepage": "https://stuf.github.io/validation",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "karet": "^1.2.2",
+    "karet.util": "^0.12.2",
+    "kefir": "^3.7.2",
+    "kefir.atom": "^5.3.4",
+    "partial.lenses": "^11.8.0",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "react-scripts": "^1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

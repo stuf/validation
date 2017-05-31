@@ -1,0 +1,14 @@
+html body {
+  font-family: 'PT Sans', sans-serif;
+  height: 100rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+}
+
+html code,
+input.form-control {
+  font-family: 'Overpass Mono', monospace;
+}
+
