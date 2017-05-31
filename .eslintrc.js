@@ -1,6 +1,7 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "jest": true
     },
     "extends": "airbnb",
     "rules": {
@@ -9,6 +10,7 @@ module.exports = {
         "spaced-comment": 0,
         "react/jsx-wrap-multilines": 0,
         "react/jsx-filename-extension": 0,
+        "react/jsx-indent": 0,
         "react/jsx-indent-props": 0,
         "react/jsx-first-prop-new-line": 0,
         "react/jsx-closing-bracket-location": 0,

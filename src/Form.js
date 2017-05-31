@@ -48,8 +48,6 @@ const Form = () => {
                     value={U.view('anotherInput', formData)}
                     validation={U.view('anotherInput', formValidation)} />
 
-        <hr />
-
         <div className="form-group">
           <button {...{ disabled: isInvalid,
                         className: U.cns('btn',
@@ -62,22 +60,37 @@ const Form = () => {
 
         <hr />
 
-        <h2><code>formData</code></h2>
-        <pre><code>{formData.map(poopJson)}</code></pre>
+        <div className="card-group">
+          <div className="card">
+            <div className="card-header">
+              Data
+            </div>
+            <div className="card-block">
+              <pre><code>{formData.map(poopJson)}</code></pre>
+            </div>
+          </div>
+
+          <div className={U.cns('card',
+                                'card-inverse',
+                                U.ifte(isInvalid, 'card-danger', 'card-success'))}>
+            <div className="card-header">
+              Validation result
+            </div>
+            <div className="card-block validation-result">
+              {U.ifte(isInvalid,
+                      <pre><code>{formValidation.map(poopJson)}</code></pre>,
+                      <p>Form is valid ♡</p>)}
+            </div>
+          </div>
+        </div>
 
         <hr />
-
-        <h2>
-          <code>formValidation</code>
-        </h2>
 
         <p>
           Form is valid: {U.seq(formValidation,
             U.or(U.isNil, U.isEmpty),
             U.toString)}
         </p>
-
-        <pre><code>{formValidation.map(poopJson)}</code></pre>
       </form>
     </div>
   );

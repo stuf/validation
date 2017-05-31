@@ -9,8 +9,13 @@ const App = () =>
   <div>
     <header className="jumbotron text-center">
       <div className="container">
-        <h1>Calmm</h1>
-        <h2>Form Validation</h2>
+        <div className="content">
+          <h1>Calmm · Form Validation</h1>
+          <hr />
+          <p>
+            Validating form data in <a href="https://github.com/calmm-js">Calmm.js</a>
+          </p>
+        </div>
       </div>
     </header>
     <div className="container">

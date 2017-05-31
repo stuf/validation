@@ -17,6 +17,12 @@ export const mustNotEqual = R.compose(L.when, R.complement, R.equals);
 
 //
 
+export const ifCond = 0;
+
+export const requiredIfCond = 1;
+
+//
+
 export const newValidator = (name, schema) => [name, [name, L.pick(schema)]];
 export const newValidatorFromP = ([name, schema]) => newValidator(name, schema);
 
