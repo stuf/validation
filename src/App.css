@@ -29,7 +29,7 @@ header .content {
   padding: 2rem;
 }
 
-header .content p {
+header .content p:last-child {
   margin-bottom: 0;
 }
 

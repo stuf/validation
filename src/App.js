@@ -15,9 +15,13 @@ const App = () =>
           <p>
             Validating form data in <a href="https://github.com/calmm-js">Calmm.js</a>
           </p>
+          <p>
+            <a href="https://github.com/stuf/validation">View on Github</a>
+          </p>
         </div>
       </div>
     </header>
+
     <div className="container">
       <Form />
     </div>
