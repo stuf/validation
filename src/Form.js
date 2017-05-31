@@ -83,14 +83,6 @@ const Form = () => {
             </div>
           </div>
         </div>
-
-        <hr />
-
-        <p>
-          Form is valid: {U.seq(formValidation,
-            U.or(U.isNil, U.isEmpty),
-            U.toString)}
-        </p>
       </form>
     </div>
   );
